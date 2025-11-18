@@ -85,17 +85,10 @@
       text-transform: uppercase;
     }
 
-    .nav__logo {
-      width: 32px;
-      height: 32px;
-      border-radius: 12px;
-      background: radial-gradient(circle at 20% 0, var(--color-accent), var(--color-primary));
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--color-white);
-      font-size: 0.9rem;
-      font-weight: 800;
+    .nav__logo-img {
+      height: 36px;
+      width: auto;
+      display: block;
     }
 
     .nav__links {
@@ -715,9 +708,10 @@
       <div class="container">
         <nav class="nav">
           <div class="nav__brand">
-            <div class="nav__logo">M</div>
+            <img src="midc-logo.png" alt="MIDC Company" class="nav__logo-img">
             <span>MIDC Company</span>
           </div>
+
           <div class="nav__links">
             <button class="nav__link" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'});">Quiénes somos</button>
             <button class="nav__link" onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'});">Servicios</button>
@@ -738,8 +732,8 @@
           <div>
             <div class="hero__eyebrow">Ecosistemas · Seguros · Asistencias</div>
             <h1 class="hero__title">
-              MIDC Company articula el
-              <span class="hero__highlight">ecosistema ExceNet, Excelink y Force-SOS</span>
+              MIDC Company articula un
+              <span class="hero__highlight">ecosistema integral</span>
               para crecer tu negocio de seguros y asistencias.
             </h1>
             <p class="hero__subtitle">
@@ -751,33 +745,37 @@
             <div class="hero__badges">
               <div class="badge">
                 <span class="badge__dot"></span>
-                ExceNet · Ecosistema de asistencias y seguros digitales
+                Estrategia y modelos de negocio
               </div>
               <div class="badge">
                 <span class="badge__dot"></span>
-                Excelink · Plataforma de venta de asistencias
+                Canales comerciales y ecosistemas de valor
               </div>
               <div class="badge">
                 <span class="badge__dot"></span>
-                Force-SOS · Operación y gestión de asistencias
+                Plataformas y operación de asistencias
               </div>
             </div>
 
             <div class="hero__actions">
-              <!-- 🔁 Cambia el número de WhatsApp por el tuyo -->
-              <a class="btn btn--primary" href="https://wa.me/000000000000?text=Hola%20MIDC%20Company%2C%20quiero%20informaci%C3%B3n%20sobre%20sus%20soluciones%20ExceNet%2C%20Excelink%20y%20Force-SOS" target="_blank" rel="noreferrer">
+              <!-- WhatsApp con tu número -->
+              <a class="btn btn--primary"
+                href="https://wa.me/50769836956?text=Hola%20MIDC%20Company%2C%20quiero%20informaci%C3%B3n%20sobre%20sus%20soluciones."
+                target="_blank" rel="noreferrer">
                 <span class="btn__icon">💬</span>
                 Escríbenos por WhatsApp
               </a>
-              <!-- 🔁 Cambia el correo por el de MIDC -->
-              <a class="btn btn--ghost" href="mailto:contacto@midccompany.com?subject=Reuni%C3%B3n%20con%20MIDC%20Company">
+
+              <!-- Correo -->
+              <a class="btn btn--ghost"
+                href="mailto:contacto@midccompany.com?subject=Reuni%C3%B3n%20con%20MIDC%20Company">
                 <span class="btn__icon">📅</span>
                 Solicitar una reunión
               </a>
             </div>
 
             <p class="hero__note">
-              Acompañamos bancos, aseguradoras, corredores y aliados comerciales en Venezuela y otros países de la región.
+              📱 <strong>+507 6983-6956</strong> · Acompañamos bancos, aseguradoras, corredores y aliados comerciales en la región.
             </p>
           </div>
 
@@ -1019,7 +1017,6 @@
                   <span class="contact__bullet">📧</span>
                   <span>
                     <span class="contact__highlight">Correo:</span>
-                    <!-- 🔁 Cambia este correo por el real de MIDC -->
                     contacto@midccompany.com
                   </span>
                 </li>
@@ -1027,8 +1024,7 @@
                   <span class="contact__bullet">📱</span>
                   <span>
                     <span class="contact__highlight">WhatsApp:</span>
-                    <!-- 🔁 Cambia este número por el tuyo -->
-                    +58 000 0000000
+                    +507 69836956
                   </span>
                 </li>
                 <li>
@@ -1110,3 +1106,5 @@
   </script>
 </body>
 </html>
+
+
