@@ -85,10 +85,17 @@
       text-transform: uppercase;
     }
 
-    .nav__logo-img {
-      height: 36px;
-      width: auto;
-      display: block;
+    .nav__logo {
+      width: 32px;
+      height: 32px;
+      border-radius: 12px;
+      background: radial-gradient(circle at 20% 0, var(--color-accent), var(--color-primary));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--color-white);
+      font-size: 0.9rem;
+      font-weight: 800;
     }
 
     .nav__links {
@@ -708,9 +715,9 @@
       <div class="container">
         <nav class="nav">
           <div class="nav__brand">
-            <img src="midc-logo.png" alt="MIDC Company" class="nav__logo-img">
-            <span>MIDC Company</span>
-          </div>
+  <img src="Logo MIDC Nuevo v2.pdf.png" alt="MIDC Company" class="nav__logo-img">
+  <span>MIDC Company</span>
+</div>
 
           <div class="nav__links">
             <button class="nav__link" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'});">Quiénes somos</button>
@@ -730,54 +737,56 @@
       <section class="hero">
         <div class="container hero__grid">
           <div>
-            <div class="hero__eyebrow">Ecosistemas · Seguros · Asistencias</div>
-            <h1 class="hero__title">
-              MIDC Company articula un
-              <span class="hero__highlight">ecosistema integral</span>
-              para crecer tu negocio de seguros y asistencias.
-            </h1>
-            <p class="hero__subtitle">
-              Diseñamos, implementamos y operamos modelos de negocio que conectan
-              <strong>banca, aseguradoras, asistencias y canales digitales</strong>
-              en Latinoamérica, con foco en crecimiento rentable y experiencia del cliente.
-            </p>
+            <div>
+  <div class="hero__eyebrow">Ecosistemas · Seguros · Asistencias</div>
+  <h1 class="hero__title">
+    MIDC Company articula un
+    <span class="hero__highlight">ecosistema integral</span>
+    para hacer crecer tu negocio.
+  </h1>
+  <p class="hero__subtitle">
+    Diseñamos, implementamos y operamos modelos de negocio que conectan
+    <strong>banca, aseguradoras, asistencias y canales digitales</strong>
+    en Latinoamérica, con foco en crecimiento rentable y experiencia del cliente.
+  </p>
 
-            <div class="hero__badges">
-              <div class="badge">
-                <span class="badge__dot"></span>
-                Estrategia y modelos de negocio
-              </div>
-              <div class="badge">
-                <span class="badge__dot"></span>
-                Canales comerciales y ecosistemas de valor
-              </div>
-              <div class="badge">
-                <span class="badge__dot"></span>
-                Plataformas y operación de asistencias
-              </div>
-            </div>
+  <div class="hero__badges">
+    <div class="badge">
+      <span class="badge__dot"></span>
+      Estrategia y modelos de negocio
+    </div>
+    <div class="badge">
+      <span class="badge__dot"></span>
+      Canales comerciales y ecosistemas de valor
+    </div>
+    <div class="badge">
+      <span class="badge__dot"></span>
+      Plataformas y operación de asistencias
+    </div>
+  </div>
 
-            <div class="hero__actions">
-              <!-- WhatsApp con tu número -->
-              <a class="btn btn--primary"
-                href="https://wa.me/50769836956?text=Hola%20MIDC%20Company%2C%20quiero%20informaci%C3%B3n%20sobre%20sus%20soluciones."
-                target="_blank" rel="noreferrer">
-                <span class="btn__icon">💬</span>
-                Escríbenos por WhatsApp
-              </a>
+  <div class="hero__actions">
+    <!-- WhatsApp con tu número -->
+    <a class="btn btn--primary"
+       href="https://wa.me/50769836956?text=Hola%20MIDC%20Company%2C%20quiero%20informaci%C3%B3n%20sobre%20sus%20soluciones."
+       target="_blank" rel="noreferrer">
+      <span class="btn__icon">💬</span>
+      Escríbenos por WhatsApp
+    </a>
 
-              <!-- Correo -->
-              <a class="btn btn--ghost"
-                href="mailto:contacto@midccompany.com?subject=Reuni%C3%B3n%20con%20MIDC%20Company">
-                <span class="btn__icon">📅</span>
-                Solicitar una reunión
-              </a>
-            </div>
+    <!-- Correo (si quieres, luego cambiamos el mail real) -->
+    <a class="btn btn--ghost"
+       href="mailto:administracion@midccompany.com?subject=Reuni%C3%B3n%20con%20MIDC%20Company">
+      <span class="btn__icon">📅</span>
+      Solicitar una reunión
+    </a>
+  </div>
 
-            <p class="hero__note">
-              📱 <strong>+507 6983-6956</strong> · Acompañamos bancos, aseguradoras, corredores y aliados comerciales en la región.
-            </p>
-          </div>
+  <p class="hero__note">
+    📱 <strong>+507 6983-6956</strong> · Acompañamos bancos, aseguradoras, corredores y aliados comerciales en la región.
+  </p>
+</div>
+
 
           <aside class="hero__card">
             <div class="hero__card-badge">Ecosistema MIDC</div>
@@ -812,7 +821,7 @@
             <div class="section__eyebrow">Quiénes somos</div>
             <h2 class="section__title">MIDC Company: plataforma integradora de soluciones.</h2>
             <p class="section__subtitle">
-              MIDC Company articula un ecosistema de marcas y plataformas (ExceNet, Excelink, Force-SOS y aliados)
+              MIDC Company articula un ecosistema de marcas y plataformas (ExceNet, tu seguro en línea, Asistencias en la palma de tu mano y aliados)
               para construir modelos de seguros y asistencias adaptados a la realidad de cada organización.
             </p>
           </div>
@@ -830,7 +839,7 @@
                 <span class="pill">Diseño de modelos banca-seguros</span>
                 <span class="pill">Portafolios de asistencias y valor agregado</span>
                 <span class="pill">Fuerza de ventas, TMK y canales digitales</span>
-                <span class="pill">Plataformas ExceNet, Excelink y Force-SOS</span>
+                <span class="pill">Plataformas ExceNet, Tu seguro en línea y Asistencias en la palma de tu mano</span>
               </div>
             </div>
             <div class="stats">
@@ -858,7 +867,7 @@
             <div class="section__eyebrow">Servicios</div>
             <h2 class="section__title">Qué hace MIDC Company por tu organización</h2>
             <p class="section__subtitle">
-              Conectamos estrategia, plataformas (ExceNet, Excelink, Force-SOS) y equipos para que tus productos se
+              Conectamos estrategia, plataformas (ExceNet,venta de asistencias en línea, seguros en línea) y equipos para que tus productos se
               conviertan en resultados tangibles en primas, clientes y experiencia.
             </p>
           </div>
@@ -892,13 +901,13 @@
 
             <article class="card">
               <div class="card__tag">Plataformas</div>
-              <h3 class="card__title">Implementación de ExceNet, Excelink y Force-SOS</h3>
+              <h3 class="card__title">Implementación de ExceNet, Plataformas Digitales</h3>
               <p class="card__text">
                 Integramos nuestras plataformas a tu realidad tecnológica y operativa.
               </p>
               <ul class="card__list">
-                <li><span class="card__bullet">•</span> Flujos de venta y activación vía Excelink.</li>
-                <li><span class="card__bullet">•</span> Operación y atención de casos vía Force-SOS.</li>
+                <li><span class="card__bullet">•</span> Flujos de venta y activación.</li>
+                <li><span class="card__bullet">•</span> Operación y atención de casos.</li>
                 <li><span class="card__bullet">•</span> Modelo de gobierno y tableros de control.</li>
               </ul>
             </article>
@@ -938,7 +947,7 @@
               <ul class="card__list">
                 <li><span class="card__bullet">•</span> Comités de seguimiento y análisis de resultados.</li>
                 <li><span class="card__bullet">•</span> Ajustes a portafolios y canales según desempeño.</li>
-                <li><span class="card__bullet">•</span> Roadmap de evolución de ExceNet / Excelink / Force-SOS.</li>
+                <li><span class="card__bullet">•</span> Roadmap de evolución.</li>
               </ul>
             </article>
           </div>
@@ -952,7 +961,7 @@
             <div class="section__eyebrow">Metodología de trabajo</div>
             <h2 class="section__title">Metodología 3DS MIDC: Diagnóstico · Diseño · Despliegue · Seguimiento</h2>
             <p class="section__subtitle">
-              Utilizamos una metodología práctica que integra tu visión, nuestros ecosistemas (ExceNet, Excelink, Force-SOS)
+              Utilizamos una metodología práctica que integra tu visión, nuestros ecosistemas (ExceNet,plataformas Digitales)
               y los equipos clave para asegurar que el modelo no quede en el papel.
             </p>
           </div>
@@ -970,7 +979,7 @@
               <div class="step__index">Fase 2</div>
               <h3 class="step__title">Diseño</h3>
               <p class="step__text">
-                Definimos la propuesta de valor, portafolios ExceNet, rol de Excelink y Force-SOS, modelo económico,
+                Definimos la propuesta de valor, portafolios, rol y ecosistema digital, modelo económico,
                 indicadores y requerimientos operativos y tecnológicos.
               </p>
             </article>
@@ -1017,6 +1026,7 @@
                   <span class="contact__bullet">📧</span>
                   <span>
                     <span class="contact__highlight">Correo:</span>
+                    <!-- 🔁 Cambia este correo por el real de MIDC -->
                     administración@midccompany.com
                   </span>
                 </li>
@@ -1024,13 +1034,14 @@
                   <span class="contact__bullet">📱</span>
                   <span>
                     <span class="contact__highlight">WhatsApp:</span>
+                    <!-- 🔁 Cambia este número por el tuyo -->
                     +507 69836956
                   </span>
                 </li>
                 <li>
                   <span class="contact__bullet">📍</span>
                   <span>
-                    Operamos desde Panamá y Venezuela con presencia y aliados en otros países de Latinoamérica.
+                    Operamos desde Venezuela con presencia y aliados en otros países de Latinoamérica.
                   </span>
                 </li>
               </ul>
@@ -1057,7 +1068,7 @@
               <div class="form__row">
                 <div class="form__group">
                   <label for="email">Correo</label>
-                  <input id="email" type="email" placeholder=administracion@midccompany.com" required />
+                  <input id="email" type="email" placeholder="tucorreo@empresa.com" required />
                 </div>
                 <div class="form__group">
                   <label for="pais">País</label>
@@ -1070,7 +1081,7 @@
                   <option value="">Selecciona una opción</option>
                   <option>Modelo banca-seguros</option>
                   <option>Portafolio de asistencias ExceNet</option>
-                  <option>Implementación Excelink / Force-SOS</option>
+                  <option>Implementación de sistemas marca blanca / Gestión de Asistencias y Seguros </option>
                   <option>Canales y fuerza de ventas</option>
                   <option>Otro</option>
                 </select>
@@ -1091,7 +1102,7 @@
     <!-- FOOTER -->
     <footer class="footer">
       <div class="container footer__inner">
-        <div>© <span id="year"></span> MIDC Company. Ecosistema ExceNet · Excelink · Force-SOS.</div>
+        <div>© <span id="year"></span> MIDC Company. Ecosistema ExceNet · Venta de Seguros · Venta de Asistencias .</div>
         <div class="footer__links">
           <span class="footer__link">Aviso legal</span>
           <span class="footer__link">Política de privacidad</span>
@@ -1106,6 +1117,8 @@
   </script>
 </body>
 </html>
+
+
 
 
 
