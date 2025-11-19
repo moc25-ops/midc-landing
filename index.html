@@ -97,6 +97,12 @@
       font-size: 0.9rem;
       font-weight: 800;
     }
+.nav__logo-img {
+  width: 80%;      /* Puedes subir a 85% si lo quieres un poquito más grande */
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
 
     .nav__links {
       display: flex;
@@ -711,13 +717,16 @@
 <body>
   <div class="page">
     <!-- HEADER -->
+       <!-- HEADER -->
     <header class="header">
       <div class="container">
         <nav class="nav">
           <div class="nav__brand">
-  <img src="midc-logo.png" alt="MIDC Company" class="nav__logo-img">
-  <span>MIDC Company</span>
-</div>
+            <div class="nav__logo">
+              <img src="midc-logo.png" alt="MIDC Company" class="nav__logo-img">
+            </div>
+            <span>MIDC Company</span>
+          </div>
 
           <div class="nav__links">
             <button class="nav__link" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'});">Quiénes somos</button>
@@ -731,6 +740,7 @@
         </nav>
       </div>
     </header>
+
 
     <main>
       <!-- HERO -->
@@ -1117,6 +1127,8 @@
   </script>
 </body>
 </html>
+
+
 
 
 
