@@ -170,6 +170,26 @@
       margin-bottom: 1rem;
       color: var(--color-primary-dark);
     }
+    .hero__content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.hero-title-row {
+  display: flex;
+  align-items: center;
+  gap: 12px; /* espacio entre el cuadrito y el texto */
+}
+
+.hero-title-accent {
+  width: 8px;
+  height: 52px;
+  border-radius: 999px;
+  background: linear-gradient(180deg, var(--color-accent), var(--color-primary));
+  flex-shrink: 0;
+}
+
 
     .hero__highlight {
       background: linear-gradient(90deg, var(--color-accent), var(--color-primary));
@@ -744,60 +764,66 @@
 
     <main>
       <!-- HERO -->
+            <!-- HERO -->
       <section class="hero">
         <div class="container hero__grid">
-          <div>
-            <div>
-  <div class="hero__eyebrow">Ecosistemas · Seguros · Asistencias</div>
-  <h1 class="hero__title">
-    MIDC Company articula un
-    <span class="hero__highlight">ecosistema integral</span>
-    para hacer crecer tu negocio.
-  </h1>
-  <p class="hero__subtitle">
-    Diseñamos, implementamos y operamos modelos de negocio que conectan
-    <strong>banca, aseguradoras, asistencias y canales digitales</strong>
-    en Latinoamérica, con foco en crecimiento rentable y experiencia del cliente.
-  </p>
+          <!-- Columna izquierda: texto -->
+          <div class="hero__content">
+            <div class="hero__eyebrow">Ecosistemas · Seguros · Asistencias</div>
 
-  <div class="hero__badges">
-    <div class="badge">
-      <span class="badge__dot"></span>
-      Estrategia y modelos de negocio
-    </div>
-    <div class="badge">
-      <span class="badge__dot"></span>
-      Canales comerciales y ecosistemas de valor
-    </div>
-    <div class="badge">
-      <span class="badge__dot"></span>
-      Plataformas y operación de asistencias
-    </div>
-  </div>
+            <div class="hero-title-row">
+              <div class="hero-title-accent"></div>
+              <h1 class="hero__title">
+                MIDC Company articula un
+                <span class="hero__highlight">ecosistema integral</span>
+                para hacer crecer tu negocio.
+              </h1>
+            </div>
 
-  <div class="hero__actions">
-    <!-- WhatsApp con tu número -->
-    <a class="btn btn--primary"
-       href="https://wa.me/50769836956?text=Hola%20MIDC%20Company%2C%20quiero%20informaci%C3%B3n%20sobre%20sus%20soluciones."
-       target="_blank" rel="noreferrer">
-      <span class="btn__icon">💬</span>
-      Escríbenos por WhatsApp
-    </a>
+            <p class="hero__subtitle">
+              Diseñamos, implementamos y operamos modelos de negocio que conectan
+              <strong>banca, aseguradoras, asistencias y canales digitales</strong>
+              en Latinoamérica, con foco en crecimiento rentable y experiencia del cliente.
+            </p>
 
-    <!-- Correo (si quieres, luego cambiamos el mail real) -->
-    <a class="btn btn--ghost"
-       href="mailto:administracion@midccompany.com?subject=Reuni%C3%B3n%20con%20MIDC%20Company">
-      <span class="btn__icon">📅</span>
-      Solicitar una reunión
-    </a>
-  </div>
+            <div class="hero__badges">
+              <div class="badge">
+                <span class="badge__dot"></span>
+                Estrategia y modelos de negocio
+              </div>
+              <div class="badge">
+                <span class="badge__dot"></span>
+                Canales comerciales y ecosistemas de valor
+              </div>
+              <div class="badge">
+                <span class="badge__dot"></span>
+                Plataformas y operación de asistencias
+              </div>
+            </div>
 
-  <p class="hero__note">
-    📱 <strong>+507 6983-6956</strong> · Acompañamos bancos, aseguradoras, corredores y aliados comerciales en la región.
-  </p>
-</div>
+            <div class="hero__actions">
+              <!-- WhatsApp con tu número -->
+              <a class="btn btn--primary"
+                 href="https://wa.me/50769836956?text=Hola%20MIDC%20Company%2C%20quiero%20informaci%C3%B3n%20sobre%20sus%20soluciones."
+                 target="_blank" rel="noreferrer">
+                <span class="btn__icon">💬</span>
+                Escríbenos por WhatsApp
+              </a>
 
+              <!-- Correo -->
+              <a class="btn btn--ghost"
+                 href="mailto:administracion@midccompany.com?subject=Reuni%C3%B3n%20con%20MIDC%20Company">
+                <span class="btn__icon">📅</span>
+                Solicitar una reunión
+              </a>
+            </div>
 
+            <p class="hero__note">
+              📱 <strong>+507 6983-6956</strong> · Acompañamos bancos, aseguradoras, corredores y aliados comerciales en la región.
+            </p>
+          </div>
+
+          <!-- Columna derecha: tarjeta -->
           <aside class="hero__card">
             <div class="hero__card-badge">Ecosistema MIDC</div>
             <div class="hero__card-tag">Qué integramos</div>
@@ -1127,6 +1153,8 @@
   </script>
 </body>
 </html>
+
+
 
 
 
